@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Drishti</string>
+    <string name="udupi">Udupi\n\"The Temple Town\"</string>
+    <string name="bengaluru">Bengaluru\n\"The Capital\"</string>
+    <string name="mangaluru">Mangaluru\n\"The Port City\"</string>
+    <string name="mysuru">Mysuru\n\"The Royal City\"</string>
+    <string name="coorg">Coorg\n\"Scotland of India\"</string>
+    <string name="location">location</string>
+
+</resources>
