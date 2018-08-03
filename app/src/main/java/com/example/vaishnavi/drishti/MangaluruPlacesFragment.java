@@ -29,13 +29,13 @@ public class MangaluruPlacesFragment extends Fragment {
 
         ArrayList<Location> locations = new ArrayList<>();
 
-        locations.add(new Location("St. Aloysius Chapel", "1 km from city centre", R.drawable.mang_image1));
-        locations.add(new Location("Kadri Park", "3 km from city centre", R.drawable.mang_image2));
-        locations.add(new Location("New Mangalore Port", "4 km from city centre", R.drawable.mang_image3));
-        locations.add(new Location("Panambur Beach", "10 km from city centre", R.drawable.mang_image4));
-        locations.add(new Location("Kudroli Temple", "12 km from city centre", R.drawable.mang_image5));
-        locations.add(new Location("Pilikula Nisargadhama", "15 km from city centre", R.drawable.mang_image6));
-        locations.add(new Location("Tannirbavi Beach", "20 km from city centre", R.drawable.mang_image7));
+        locations.add(new Location(getString(R.string.mang_place1), getString(R.string.mang_des1), R.drawable.mang_image1));
+        locations.add(new Location(getString(R.string.mang_place2), getString(R.string.mang_des2), R.drawable.mang_image2));
+        locations.add(new Location(getString(R.string.mang_place3), getString(R.string.mang_des3), R.drawable.mang_image3));
+        locations.add(new Location(getString(R.string.mang_place4), getString(R.string.mang_des4), R.drawable.mang_image4));
+        locations.add(new Location(getString(R.string.mang_place5), getString(R.string.mang_des5), R.drawable.mang_image5));
+        locations.add(new Location(getString(R.string.mang_place6), getString(R.string.mang_des6), R.drawable.mang_image6));
+        locations.add(new Location(getString(R.string.mang_place7), getString(R.string.mang_des7), R.drawable.mang_image7));
 
 
         LocationAdapter locationAdapter = new LocationAdapter(getActivity(), locations);

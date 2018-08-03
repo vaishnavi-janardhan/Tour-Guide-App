@@ -1,27 +1,27 @@
 package com.example.vaishnavi.drishti;
 
 public class Location {
-    private String mLocationName;
-    private String mLocationDetails;
-    private int mLocationImageResourceId;
+    private String locationName;
+    private String locationDetails;
+    private int locationImageResourceId;
 
     public Location(String locationName, String locationDetails, int locationImageResourceId) {
-        mLocationName = locationName;
-        mLocationDetails = locationDetails;
-        mLocationImageResourceId = locationImageResourceId;
+        this.locationName = locationName;
+        this.locationDetails = locationDetails;
+        this.locationImageResourceId = locationImageResourceId;
     }
 
     /* Get the name of the location */
     public String getLocationName() {
-        return mLocationName;
+        return locationName;
     }
 
     /* Get the distance of the location */
     public String getLocationDetails() {
-        return mLocationDetails;
+        return locationDetails;
     }
 
     public int getLocationImageResourceId() {
-        return mLocationImageResourceId;
+        return locationImageResourceId;
     }
 }

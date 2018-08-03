@@ -29,13 +29,13 @@ public class UdupiPlacesFragment extends Fragment {
 
         ArrayList<Location> locations = new ArrayList<>();
 
-        locations.add(new Location("Sri Krishna Matha", "1 km from city centre", R.drawable.udupi_image1));
-        locations.add(new Location("MAP, Manipal", "5.9 km from city centre", R.drawable.udupi_image6));
-        locations.add(new Location("Endpoint, Manipal", "6.9 km from city centre", R.drawable.udupi_image3));
-        locations.add(new Location("St. Mary's Island", "11.2 km from city centre", R.drawable.udupi_image2));
-        locations.add(new Location("Kaup Beach", "16.4 km from city centre", R.drawable.udupi_image4));
-        locations.add(new Location("Kudlu Theertha Falls", "42 km from city centre", R.drawable.udupi_image5));
-        locations.add(new Location("Kamalashile", "62.4 km from city centre", R.drawable.udupi_image7));
+        locations.add(new Location(getString(R.string.udupi_place1), getString(R.string.udupi_des1), R.drawable.udupi_image1));
+        locations.add(new Location(getString(R.string.udupi_place2), getString(R.string.udupi_des2), R.drawable.udupi_image6));
+        locations.add(new Location(getString(R.string.udupi_place3), getString(R.string.udupi_des3), R.drawable.udupi_image3));
+        locations.add(new Location(getString(R.string.udupi_place4), getString(R.string.udupi_des4), R.drawable.udupi_image2));
+        locations.add(new Location(getString(R.string.udupi_place5), getString(R.string.udupi_des5), R.drawable.udupi_image4));
+        locations.add(new Location(getString(R.string.udupi_place6), getString(R.string.udupi_des6), R.drawable.udupi_image5));
+        locations.add(new Location(getString(R.string.udupi_place7), getString(R.string.udupi_des7), R.drawable.udupi_image7));
 
         LocationAdapter locationAdapter = new LocationAdapter(getActivity(), locations);
         ListView listView = rootView.findViewById(R.id.list);

@@ -29,13 +29,13 @@ public class MangaloreRestFragment extends Fragment {
 
         ArrayList<Location> locations = new ArrayList<>();
 
-        locations.add(new Location("Janatha Deluxe", "All vegetarian with over 2 decades of service", R.drawable.mang_rest1));
-        locations.add(new Location("Pallkhi Restaurant", "One of the most trusted and popular restaurant", R.drawable.mang_rest2));
-        locations.add(new Location("Hotel Maharaja", "Veg and Non-veg ghee roasts", R.drawable.mang_rest3));
-        locations.add(new Location("Gajalee", "Located on a hilltop with breathtaking views", R.drawable.mang_rest4));
-        locations.add(new Location("Hotel Machali", "Special thalis for fish lovers", R.drawable.mang_rest5));
-        locations.add(new Location("Pabbas", "Ice cream, fast food", R.drawable.mang_rest6));
-        locations.add(new Location("Giri Manja's", "Casual dining and seafood", R.drawable.mang_rest7));
+        locations.add(new Location(getString(R.string.mang_hotel1), getString(R.string.mang_hotel_des1), R.drawable.mang_rest1));
+        locations.add(new Location(getString(R.string.mang_hotel2), getString(R.string.mang_hotel_des2), R.drawable.mang_rest2));
+        locations.add(new Location(getString(R.string.mang_hotel3), getString(R.string.mang_hotel_des3), R.drawable.mang_rest3));
+        locations.add(new Location(getString(R.string.mang_hotel4), getString(R.string.mang_hotel_des4), R.drawable.mang_rest4));
+        locations.add(new Location(getString(R.string.mang_hotel5), getString(R.string.mang_hotel_des5), R.drawable.mang_rest5));
+        locations.add(new Location(getString(R.string.mang_hotel6), getString(R.string.mang_hotel_des6), R.drawable.mang_rest6));
+        locations.add(new Location(getString(R.string.mang_hotel7), getString(R.string.mang_hotel_des7), R.drawable.mang_rest7));
 
 
         LocationAdapter locationAdapter = new LocationAdapter(getActivity(), locations);

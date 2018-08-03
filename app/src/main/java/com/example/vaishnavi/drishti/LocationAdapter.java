@@ -48,28 +48,27 @@ public class LocationAdapter extends ArrayAdapter<Location> {
     public View getView(int position, @Nullable View convertView, @NonNull ViewGroup parent) {
 
         //Check if the existing view is being reused, otherwise inflate the view
-        View listItemView = convertView;
-        if (listItemView == null) {
-            listItemView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
+        if (convertView == null) {
+            convertView = LayoutInflater.from(getContext()).inflate(R.layout.list_item, parent, false);
         }
 
         // Get the {@link Location} object located at this position in the list
         Location currentLocation = getItem(position);
 
         //Find the TextView with the name location_name
-        TextView locationName = listItemView.findViewById(R.id.location_name);
+        TextView locationName = convertView.findViewById(R.id.location_name);
         locationName.setText(currentLocation.getLocationName());
 
         //Find the TextView with the name location details
-        TextView locationDetails = listItemView.findViewById(R.id.location_details);
+        TextView locationDetails = convertView.findViewById(R.id.location_details);
         locationDetails.setText(currentLocation.getLocationDetails());
 
         //Find the ImageView with the id location_image
-        ImageView locationImage = listItemView.findViewById(R.id.location_image);
+        ImageView locationImage = convertView.findViewById(R.id.location_image);
         locationImage.setImageResource(currentLocation.getLocationImageResourceId());
 
         //Return the whole list item layout containing 2 text views and 1 image view
-        return listItemView;
+        return convertView;
 
     }
 }
