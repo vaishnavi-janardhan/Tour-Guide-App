@@ -8,12 +8,13 @@ import android.support.v4.app.FragmentPagerAdapter;
 public class UdupiFragmentPagerAdapter extends FragmentPagerAdapter {
 
     final int PAGE_COUNT = 2;
-    private String tabTitles[] = new String[]{"Explore", "Eat"};
     private Context context;
+    private String tabTitles[];
 
     public UdupiFragmentPagerAdapter(FragmentManager fm, Context context) {
         super(fm);
         this.context = context;
+        tabTitles = new String[]{context.getString(R.string.explore), context.getString(R.string.eat)};
     }
 
     @Override

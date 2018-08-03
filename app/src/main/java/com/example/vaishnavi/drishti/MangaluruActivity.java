@@ -16,7 +16,7 @@ public class MangaluruActivity extends AppCompatActivity {
         ViewPager viewPager = (ViewPager) findViewById(R.id.viewpager);
 
         // Create an adapter that knows which fragment should be shown on each page
-        MangaloreFragmentPagerAdapter adapter = (new MangaloreFragmentPagerAdapter(getSupportFragmentManager(), MangaluruActivity.this));
+        MangaluruFragmentPagerAdapter adapter = (new MangaluruFragmentPagerAdapter(getSupportFragmentManager(), MangaluruActivity.this));
 
         // Set the adapter onto the view pager
         viewPager.setAdapter(adapter);

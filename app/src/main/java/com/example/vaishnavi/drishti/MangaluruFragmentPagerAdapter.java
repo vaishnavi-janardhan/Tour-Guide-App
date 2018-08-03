@@ -5,15 +5,16 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-public class MangaloreFragmentPagerAdapter extends FragmentPagerAdapter {
+public class MangaluruFragmentPagerAdapter extends FragmentPagerAdapter {
 
     final int PAGE_COUNT = 2;
-    private String tabTitles[] = new String[]{"Explore", "Eat"};
+    private String tabTitles[];
     private Context context;
 
-    public MangaloreFragmentPagerAdapter(FragmentManager fm, Context context) {
+    public MangaluruFragmentPagerAdapter(FragmentManager fm, Context context) {
         super(fm);
         this.context = context;
+        tabTitles = new String[]{context.getString(R.string.explore), context.getString(R.string.eat)};
     }
 
     @Override
@@ -21,7 +22,7 @@ public class MangaloreFragmentPagerAdapter extends FragmentPagerAdapter {
         if (position == 0)
             return new MangaluruPlacesFragment();
         else
-            return new MangaloreRestFragment();
+            return new MangaluruRestFragment();
     }
 
     @Override

@@ -62,5 +62,7 @@
     <string name="mang_des5">12 km from city centre</string>
     <string name="mang_des6">15 km from city centre</string>
     <string name="mang_des7">20 km from city centre</string>
+    <string name="explore">Explore</string>
+    <string name="eat">Eat</string>
 
 </resources>

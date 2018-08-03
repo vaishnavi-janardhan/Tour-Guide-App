@@ -13,10 +13,10 @@ import java.util.ArrayList;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class MangaloreRestFragment extends Fragment {
+public class MangaluruRestFragment extends Fragment {
 
 
-    public MangaloreRestFragment() {
+    public MangaluruRestFragment() {
         // Required empty public constructor
     }
 
